@@ -73,10 +73,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Custom ignored folders
 Assets/Graphics/
 
-# Corresponding META files
 Assets/Graphics.meta
-
-# 

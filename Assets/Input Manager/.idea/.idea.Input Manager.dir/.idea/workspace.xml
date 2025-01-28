@@ -5,34 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="243c79ae-6e16-4211-95ef-0ae8381bb4a0" name="Changes" comment="Input Manager WIP">
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../TagSweeper/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../TagSweeper/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/AudioManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/DynamicsManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/EditorSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/GraphicsSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/InputManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/MemorySettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/PresetManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/ProjectSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/ProjectVersion.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/QualitySettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/TagManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/TimeManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/VFXManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/VersionControlSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TagSweeper/ProjectSettings/XRSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Input Manager.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Input Manager.dir/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Input Manager.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Input Manager.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Controls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/New Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +24,7 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2rgL9bJKrSoU1UqNqFbNq69pDPZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,6 +38,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -81,6 +62,13 @@
       <workItem from="1737144928476" duration="651000" />
       <workItem from="1737148431119" duration="18000" />
       <workItem from="1737148471456" duration="464000" />
+      <workItem from="1737577463291" duration="45000" />
+      <workItem from="1737577718228" duration="100000" />
+      <workItem from="1737577890351" duration="199000" />
+      <workItem from="1737578099060" duration="2000" />
+      <workItem from="1737578114566" duration="920000" />
+      <workItem from="1737579077558" duration="267000" />
+      <workItem from="1737753622055" duration="211000" />
     </task>
     <servers />
   </component>

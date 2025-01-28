@@ -28,96 +28,25 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ""id"": ""1ae503ad-4c99-4bd8-bcb1-34803fbf4f47"",
             ""actions"": [
                 {
-                    ""name"": ""Forward"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""ef876e10-43cc-446c-9631-a3e110621570"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Backward"",
-                    ""type"": ""Button"",
-                    ""id"": ""e35750cd-8a08-44d8-ac16-2efd219c0f3e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Left"",
-                    ""type"": ""Button"",
-                    ""id"": ""9e1192e2-16ef-49fc-9d35-2ad13ec1d950"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Right"",
-                    ""type"": ""Button"",
-                    ""id"": ""7acee2d8-bc81-45a8-abcc-9411349cd1e0"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""New action"",
+                    ""name"": ""Move"",
                     ""type"": ""PassThrough"",
                     ""id"": ""3677ee52-6871-440e-b6fa-c5c83a70f577"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""Value"",
+                    ""id"": ""e66f5baf-5f09-4a38-946a-71aff92b26f6"",
+                    ""expectedControlType"": ""Delta"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""f3d4c2b6-7b9b-4190-b1cf-f90e60f748bd"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Forward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2fd4128f-3823-4b37-b8cd-920663290159"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Backward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""34c8d597-e03d-4b36-aa40-f8cb129069db"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6eaeb29f-634a-4cbb-ade3-4191debb0487"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": ""WASD"",
                     ""id"": ""aef0b5f8-79a6-49f5-9c6a-6d41a5751876"",
@@ -125,7 +54,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -136,7 +65,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -147,7 +76,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -158,7 +87,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -169,9 +98,20 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""660a9ce2-b431-45fb-b2ed-15dc04b576a3"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -180,11 +120,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
 }");
         // Locomotion
         m_Locomotion = asset.FindActionMap("Locomotion", throwIfNotFound: true);
-        m_Locomotion_Forward = m_Locomotion.FindAction("Forward", throwIfNotFound: true);
-        m_Locomotion_Backward = m_Locomotion.FindAction("Backward", throwIfNotFound: true);
-        m_Locomotion_Left = m_Locomotion.FindAction("Left", throwIfNotFound: true);
-        m_Locomotion_Right = m_Locomotion.FindAction("Right", throwIfNotFound: true);
-        m_Locomotion_Newaction = m_Locomotion.FindAction("New action", throwIfNotFound: true);
+        m_Locomotion_Move = m_Locomotion.FindAction("Move", throwIfNotFound: true);
+        m_Locomotion_Look = m_Locomotion.FindAction("Look", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -246,20 +183,14 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     // Locomotion
     private readonly InputActionMap m_Locomotion;
     private List<ILocomotionActions> m_LocomotionActionsCallbackInterfaces = new List<ILocomotionActions>();
-    private readonly InputAction m_Locomotion_Forward;
-    private readonly InputAction m_Locomotion_Backward;
-    private readonly InputAction m_Locomotion_Left;
-    private readonly InputAction m_Locomotion_Right;
-    private readonly InputAction m_Locomotion_Newaction;
+    private readonly InputAction m_Locomotion_Move;
+    private readonly InputAction m_Locomotion_Look;
     public struct LocomotionActions
     {
         private @Controls m_Wrapper;
         public LocomotionActions(@Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Forward => m_Wrapper.m_Locomotion_Forward;
-        public InputAction @Backward => m_Wrapper.m_Locomotion_Backward;
-        public InputAction @Left => m_Wrapper.m_Locomotion_Left;
-        public InputAction @Right => m_Wrapper.m_Locomotion_Right;
-        public InputAction @Newaction => m_Wrapper.m_Locomotion_Newaction;
+        public InputAction @Move => m_Wrapper.m_Locomotion_Move;
+        public InputAction @Look => m_Wrapper.m_Locomotion_Look;
         public InputActionMap Get() { return m_Wrapper.m_Locomotion; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -269,40 +200,22 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_LocomotionActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_LocomotionActionsCallbackInterfaces.Add(instance);
-            @Forward.started += instance.OnForward;
-            @Forward.performed += instance.OnForward;
-            @Forward.canceled += instance.OnForward;
-            @Backward.started += instance.OnBackward;
-            @Backward.performed += instance.OnBackward;
-            @Backward.canceled += instance.OnBackward;
-            @Left.started += instance.OnLeft;
-            @Left.performed += instance.OnLeft;
-            @Left.canceled += instance.OnLeft;
-            @Right.started += instance.OnRight;
-            @Right.performed += instance.OnRight;
-            @Right.canceled += instance.OnRight;
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
+            @Look.started += instance.OnLook;
+            @Look.performed += instance.OnLook;
+            @Look.canceled += instance.OnLook;
         }
 
         private void UnregisterCallbacks(ILocomotionActions instance)
         {
-            @Forward.started -= instance.OnForward;
-            @Forward.performed -= instance.OnForward;
-            @Forward.canceled -= instance.OnForward;
-            @Backward.started -= instance.OnBackward;
-            @Backward.performed -= instance.OnBackward;
-            @Backward.canceled -= instance.OnBackward;
-            @Left.started -= instance.OnLeft;
-            @Left.performed -= instance.OnLeft;
-            @Left.canceled -= instance.OnLeft;
-            @Right.started -= instance.OnRight;
-            @Right.performed -= instance.OnRight;
-            @Right.canceled -= instance.OnRight;
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
+            @Look.started -= instance.OnLook;
+            @Look.performed -= instance.OnLook;
+            @Look.canceled -= instance.OnLook;
         }
 
         public void RemoveCallbacks(ILocomotionActions instance)
@@ -322,10 +235,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     public LocomotionActions @Locomotion => new LocomotionActions(this);
     public interface ILocomotionActions
     {
-        void OnForward(InputAction.CallbackContext context);
-        void OnBackward(InputAction.CallbackContext context);
-        void OnLeft(InputAction.CallbackContext context);
-        void OnRight(InputAction.CallbackContext context);
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
     }
 }

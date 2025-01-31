@@ -450,8 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17431dc06e540142871178b74d29c9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  cam: {fileID: 0}
+  speed: 5
+  cam: {fileID: 990709686}
 --- !u!54 &407354364
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  cam: {fileID: 990709686}
+  cam: {fileID: 2092624142}
 --- !u!1 &459819623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1055,7 @@ GameObject:
   - component: {fileID: 990709685}
   - component: {fileID: 990709684}
   - component: {fileID: 990709687}
+  - component: {fileID: 990709688}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1129,7 +1130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990709683}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03911138, y: 0.84021735, z: -0.061153613, w: 0.53736883}
+  m_LocalRotation: {x: 0.039111383, y: 0.84021735, z: -0.06115362, w: 0.53736883}
   m_LocalPosition: {x: -1.815594, y: 2, z: 0.83882}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1170,6 +1171,20 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &990709688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990709683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e454b1da7a0f9124cbee7b2bc47f0c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minRotationY: -60
+  maxRotationY: 60
 --- !u!1 &1344047065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,7 +1240,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1703937075}
+  m_LookAt: {fileID: 2092624142}
   m_Follow: {fileID: 2092624142}
   m_CommonLens: 1
   m_Lens:
@@ -1249,7 +1264,7 @@ MonoBehaviour:
   m_YAxis:
     Value: 0.5
     m_SpeedMode: 0
-    m_MaxSpeed: 4
+    m_MaxSpeed: 2
     m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -1273,7 +1288,7 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 600
+    m_MaxSpeed: 300
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -1912,7 +1927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719187304}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.013606958, y: 0.8200363, z: -0.019513585, w: 0.571817}
+  m_LocalRotation: {x: 0.013606957, y: 0.8200363, z: -0.019513583, w: 0.571817}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2035,7 +2050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982818109}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04152056, y: 0.8181043, z: -0.05954417, w: 0.5704699}
+  m_LocalRotation: {x: 0.041520562, y: 0.8181043, z: -0.059544176, w: 0.57046986}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

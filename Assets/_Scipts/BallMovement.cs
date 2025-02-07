@@ -12,6 +12,8 @@ public class BallMovement : MonoBehaviour
  private float movementY;
  public float speed = 10;
  public Transform cam;
+ public object Player { get; set; }
+
  void Start()
     {
        rb = GetComponent<Rigidbody>();

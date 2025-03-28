@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b3ee4c0f-4c74-4180-9f87-5fbb6f41f80b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Scenes/BlockLayoutTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Scenes/BlockLayoutTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/.idea/.idea.Input Manager.dir/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/.idea/.idea.Input Manager.dir/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/.idea/.idea.Input Manager.dir/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/.idea/.idea.Input Manager.dir/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/.idea/.idea.Input Manager.dir/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/.idea/.idea.Input Manager.dir/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/BallFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/BallFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/BallMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/BallMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/CameraFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/CameraFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Controls.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Controls.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Controls.inputactions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Controls.inputactions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/InputManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/InputManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/PlayerControls.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/PlayerControls.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Riggs Code.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Riggs Code/BlockLayout.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Riggs Code/BlockLayout.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Riggs Code/GetAddress.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Riggs Code/GetAddress.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Riggs Code/TestGrid.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_Scipts/Riggs Code/TestGrid.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Packages/packages-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/GridInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Row.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tile.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
+  <component name="ProjectId" id="2ub1WVnaeKc3DhQTKlGZy4Ab9Ps" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Rider.SolutionAnalysis.ShowPreview&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\jl14803\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\jl14803\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\jl14803\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3ee4c0f-4c74-4180-9f87-5fbb6f41f80b" name="Changes" comment="" />
+      <created>1742502495237</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742502495237</updated>
+      <workItem from="1742502497113" duration="4000" />
+      <workItem from="1742502513879" duration="35000" />
+      <workItem from="1742502563014" duration="34000" />
+      <workItem from="1742840983657" duration="3315000" />
+      <workItem from="1743016935642" duration="3290000" />
+      <workItem from="1743020309871" duration="628000" />
+      <workItem from="1743190046358" duration="91000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

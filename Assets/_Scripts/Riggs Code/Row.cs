@@ -5,21 +5,18 @@ using UnityEngine;
 
 public class Row : MonoBehaviour
 {
+    
+    public GameObject[] tiles = new GameObject[2];
+    private int n = 1;
 
-    public GameObject[] row; 
-    
-    
     // Start is called before the first frame update
     void Start()
     {
-       
+
+        Debug.Log(tiles[n].name + " is at index " + n);
+
     }
 
-    void getTile(int n)
-    {
-        Console.WriteLine();
-    }
-    
     // Update is called once per frame
     void Update()
     {

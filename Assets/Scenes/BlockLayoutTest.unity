@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 173808008}
+  - component: {fileID: 173808009}
   m_Layer: 0
   m_Name: Row 1
   m_TagString: Untagged
@@ -156,6 +157,22 @@ Transform:
   - {fileID: 405277839}
   m_Father: {fileID: 1966630228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &173808009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173808007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d766dac23882ba14382fb890b2d6d18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  address: 
+  tiles:
+  - {fileID: 2407693144637506902}
+  - {fileID: 405277838}
 --- !u!1 &232708136
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023bdbc34d57cbd428f44e65d86c7292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBomb: 0
+  isBombTrue: 0
 --- !u!1 &589826118
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023bdbc34d57cbd428f44e65d86c7292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBomb: 0
+  isBombTrue: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 780986098}
+  - component: {fileID: 780986099}
   m_Layer: 0
   m_Name: Row 2
   m_TagString: Untagged
@@ -903,6 +925,22 @@ Transform:
   - {fileID: 979697773}
   m_Father: {fileID: 1966630228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &780986099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780986097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d766dac23882ba14382fb890b2d6d18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  address: 
+  tiles:
+  - {fileID: 674705007}
+  - {fileID: 979697772}
 --- !u!1001 &793729272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1095,6 +1133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023bdbc34d57cbd428f44e65d86c7292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBomb: 0
+  isBombTrue: 0
 --- !u!1001 &1226667955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1947,6 +1987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023bdbc34d57cbd428f44e65d86c7292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBomb: 0
+  isBombTrue: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,6 +14,7 @@ public class BallMovement : MonoBehaviour
  public float speed = 10;
  public Transform cam;
  public object Player { get; set; }
+ public CinemachineFreeLook freeLookCamera;
 
  void Start()
     {
@@ -29,8 +31,17 @@ public class BallMovement : MonoBehaviour
 
        
     }
- private void FixedUpdate() 
+ private void FixedUpdate()
+ {
+    if (Input.GetKey(KeyCode.LeftShift))
     {
+       speed = 7.5f;
+       freeLookCamera.Priority = 8;
+    }else
+    {
+       speed = 5;
+       freeLookCamera.Priority = 10;
+    }
        
        Vector3 right = cam.right;
        Vector3 forward = cam.forward;

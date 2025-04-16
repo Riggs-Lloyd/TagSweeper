@@ -66,7 +66,7 @@ public class SprayCanRaycast : MonoBehaviour
         else
         {
             // No hit found within the max distance
-            Debug.Log("No collider hit within max distance.");
+            //Debug.Log("No collider hit within max distance.");
         }
     }
 
@@ -85,7 +85,7 @@ public class SprayCanRaycast : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No decal projectors are assigned in the array!");
+            //Debug.LogError("No decal projectors are assigned in the array!");
         }
     }
 }

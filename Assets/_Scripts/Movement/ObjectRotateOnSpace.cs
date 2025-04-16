@@ -23,7 +23,7 @@ public class ObjectRotateOnSpace : MonoBehaviour
 		while (totalRotation < 360f)
 		{
 			float rotationThisFrame = rotationSpeed * Time.deltaTime; // Calculate rotation for this frame
-			transform.Rotate(0f, 0f, rotationThisFrame); // Rotate the object around the Z-axis
+			transform.Rotate(0f, 0f, -rotationThisFrame); // Rotate the object around the Z-axis
 
 			totalRotation += rotationThisFrame; // Keep track of the total rotation
 

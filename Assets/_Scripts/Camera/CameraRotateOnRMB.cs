@@ -12,6 +12,7 @@ public class CameraRotateOnRMB : MonoBehaviour
     private float currentVerticalRotation = 0f; // Current vertical rotation value
     private Transform cameraTransform; // To store the transform of the camera for easier reference
     private CinemachineOrbitalTransposer orbitalTransposer; // Reference to the orbital transposer
+    
 
     private void Start()
     {

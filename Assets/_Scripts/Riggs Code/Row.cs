@@ -16,6 +16,8 @@ public class Row : MonoBehaviour
         Debug.Log(tiles[n].name + " is at index " + n);
 
     }
+    
+    
 
     // Update is called once per frame
     void Update()

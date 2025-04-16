@@ -169,7 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d766dac23882ba14382fb890b2d6d18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  address: 
   tiles:
   - {fileID: 2407693144637506902}
   - {fileID: 405277838}
@@ -937,7 +936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d766dac23882ba14382fb890b2d6d18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  address: 
   tiles:
   - {fileID: 674705007}
   - {fileID: 979697772}
@@ -1802,6 +1800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1966630228}
+  - component: {fileID: 1966630229}
   m_Layer: 0
   m_Name: City
   m_TagString: Untagged
@@ -1826,6 +1825,21 @@ Transform:
   - {fileID: 780986098}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1966630229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966630227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6dd9943c539603479148307a3a35cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rows:
+  - {fileID: 173808007}
+  - {fileID: 780986097}
 --- !u!1 &2101937824
 GameObject:
   m_ObjectHideFlags: 0

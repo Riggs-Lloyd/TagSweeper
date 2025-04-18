@@ -16,6 +16,13 @@ public class PlayerControls : MonoBehaviour
     void FixedUpdate()
     {
 	    Rigidbody rigidbody = GetComponent<Rigidbody>();
+	    if(Input.GetKey(KeyCode.LeftShift))
+	    {
+		    movementSpeed = 15.0f;
+	    }else
+	    {
+		    movementSpeed = 10.0f;
+	    }
 	    
 	    if(Input.GetKey(KeyCode.W)) {
 		    rigidbody.position += Vector3.forward * Time.deltaTime * movementSpeed;

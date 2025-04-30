@@ -7,6 +7,7 @@ TagManager:
   - Rotate
   - notRotate
   - Taggable
+  - Tagged
   layers:
   - Default
   - TransparentFX

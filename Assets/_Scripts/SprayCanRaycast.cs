@@ -16,6 +16,8 @@ public class SprayCanRaycast : MonoBehaviour
     public GameObject _RayCaster;
     private Vector3 newSprayPosition;
     private Vector3 wallPosition;
+    private Quaternion wallRotation;
+    private bool wallSprayed;
 
     // List to store all active decals
     private List<DecalProjector> activeDecals = new List<DecalProjector>();
@@ -34,20 +36,6 @@ public class SprayCanRaycast : MonoBehaviour
         _ray.origin = transform.position;
         _ray.direction = transform.forward;
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            // Before creating a new decal, ensure we don't exceed maxSprayCount
-            if (activeDecals.Count >= maxSprayCount)
-            {
-                // Remove the oldest decal (first in the list) if we've exceeded the limit
-                Destroy(activeDecals[0].gameObject); // Destroy the oldest decal
-                activeDecals.RemoveAt(0); // Remove it from the list
-            }
-
-            // Instantiate a new random decal at the spray position
-            CreateNewRandomDecal(newSprayPosition);
-        }
-
         CheckForColliders();
     }
 
@@ -60,7 +48,23 @@ public class SprayCanRaycast : MonoBehaviour
                 Debug.Log(hit.collider.gameObject.name + " was hit");
 
                 wallPosition = hit.collider.gameObject.transform.position;
+                wallRotation = hit.collider.gameObject.transform.rotation;
                 newSprayPosition = hit.point; // Set the spray position to the hit point
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    // Before creating a new decal, ensure we don't exceed maxSprayCount
+                    //if (activeDecals.Count >= maxSprayCount)
+                   //{
+                        // Remove the oldest decal (first in the list) if we've exceeded the limit
+                        //Destroy(activeDecals[0].gameObject); // Destroy the oldest decal
+                        //activeDecals.RemoveAt(0); // Remove it from the list
+                   // }
+
+                    // Instantiate a new random decal at the spray position
+                    CreateNewRandomDecal(wallPosition, wallRotation);
+                    hit.collider.gameObject.tag = "Tagged";
+                }
+                
             }
         }
         else
@@ -71,8 +75,9 @@ public class SprayCanRaycast : MonoBehaviour
     }
 
     // Create a new random decal at the specified position
-    void CreateNewRandomDecal(Vector3 position)
-    {
+    void CreateNewRandomDecal(Vector3 position, Quaternion rotation)
+    { 
+        //Get hit.collider.GameObject. check (Int Value) If int value = to certain number select spray of detection range, random cosmetic spray if bomb not within 4. If Int value = to bomb value explode.
         // Check if there are decal prefabs available
         if (_decalProjectors.Length > 0)
         {
@@ -80,7 +85,7 @@ public class SprayCanRaycast : MonoBehaviour
             int randomIndex = Random.Range(0, _decalProjectors.Length);
 
             // Instantiate the selected decal prefab and set its position
-            DecalProjector newDecal = Instantiate(_decalProjectors[randomIndex], position, Quaternion.identity);
+            DecalProjector newDecal = Instantiate(_decalProjectors[randomIndex], position, rotation);
             activeDecals.Add(newDecal); // Add the new decal to the list of active decals
         }
         else

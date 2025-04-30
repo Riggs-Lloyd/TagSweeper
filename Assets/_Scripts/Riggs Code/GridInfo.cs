@@ -18,7 +18,7 @@ public class GridInfo : MonoBehaviour
     void Start()
     {
 
-        Debug.Log(rows[k,Row].name + " is at row " + k);
+        Debug.Log("AH");
 
     }
 

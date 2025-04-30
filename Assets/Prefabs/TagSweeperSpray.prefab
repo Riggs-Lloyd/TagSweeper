@@ -50,11 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1888078833169288823, guid: 2300deecc2cf80743966efc8ee9239f5, type: 3}
       propertyPath: m_Size.x
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1888078833169288823, guid: 2300deecc2cf80743966efc8ee9239f5, type: 3}
       propertyPath: m_Size.y
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1888078833169288823, guid: 2300deecc2cf80743966efc8ee9239f5, type: 3}
       propertyPath: m_Material
@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 35b5062e0fd60b84c9aa19e92f445db7, type: 2}
     - target: {fileID: 6097593267559304086, guid: 2300deecc2cf80743966efc8ee9239f5, type: 3}
       propertyPath: m_Name
-      value: Decal Projector Variant
+      value: TagSweeperSpray
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -45,12 +45,12 @@ public class BallMovement : MonoBehaviour
         // Smooth transition for camera zoom (already implemented in the original code)
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 10f;
+            speed = 12.5f;
             freeLookCamera.m_Orbits[1].m_Radius = 3.5f;
         }
         else
         {
-            speed = 7.5f;
+            speed = 10f;
             freeLookCamera.m_Orbits[1].m_Radius = 3f;
         }
     }

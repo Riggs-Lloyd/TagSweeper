@@ -50,11 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2047913694193370578, guid: a5fa962db82b67344abbe7672ee9f7ed, type: 3}
       propertyPath: m_Size.x
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2047913694193370578, guid: a5fa962db82b67344abbe7672ee9f7ed, type: 3}
       propertyPath: m_Size.y
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2047913694193370578, guid: a5fa962db82b67344abbe7672ee9f7ed, type: 3}
       propertyPath: m_Material
@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c94748eaa94ef1e44a377c8938234897, type: 2}
     - target: {fileID: 5964854786906849331, guid: a5fa962db82b67344abbe7672ee9f7ed, type: 3}
       propertyPath: m_Name
-      value: Decal Projector Variant 1
+      value: ThinkingSpray
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

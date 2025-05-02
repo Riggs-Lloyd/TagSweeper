@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ffc29d91102472cbda3c4d2e906e850, type: 3}
+  m_Name: P90
+  m_EditorClassIdentifier: 
+  gunName: P90
+  damage: 50
+  fireRate: 850
+  magSize: 50
+  spareAmmo: 210
+  adsSpeed: 2.5
+  aimPosition: {x: -0.09, y: -0.15, z: 0.7}
+  burstSize: -1
+  hipBloom: 5
+  yRecoil: 0.5
+  xRecoil: 0.5
+  zRecoil: 0.5
+  hipRecoilMultiplier: 1
+  adsRecoilMultiplier: 0.5
+  recoilResetSpeed: 5
+  swayIntensity: 3
+  smoothing: 1
+  reloadTime: 1

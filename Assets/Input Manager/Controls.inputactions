@@ -6,36 +6,63 @@
             "id": "1ae503ad-4c99-4bd8-bcb1-34803fbf4f47",
             "actions": [
                 {
-                    "name": "Forward",
+                    "name": "Move",
                     "type": "PassThrough",
-                    "id": "ef876e10-43cc-446c-9631-a3e110621570",
+                    "id": "07154240-e5e6-40c3-b8a9-464bb4094a17",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "7e7d19a1-5102-47bc-b572-cd0b5d4b508d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Backward",
+                    "name": "Aim",
                     "type": "Button",
-                    "id": "e35750cd-8a08-44d8-ac16-2efd219c0f3e",
+                    "id": "47416552-ddb0-490b-bb50-60bfead057b0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Left",
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "5e8074e4-7f8a-41d2-bfd8-a17e052fa2db",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Reload",
                     "type": "Button",
-                    "id": "9e1192e2-16ef-49fc-9d35-2ad13ec1d950",
+                    "id": "35e7b108-2e27-4e16-9f55-b9dd3200992c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Right",
+                    "name": "Spray",
                     "type": "Button",
-                    "id": "7acee2d8-bc81-45a8-abcc-9411349cd1e0",
+                    "id": "8bff0ae2-7587-433f-a4a6-3a355f392440",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Run",
+                    "type": "Button",
+                    "id": "20c993eb-fc89-4db7-984d-0ac1250e1e30",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -44,46 +71,123 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "f3d4c2b6-7b9b-4190-b1cf-f90e60f748bd",
+                    "name": "WASD",
+                    "id": "329722a9-77ae-4405-a0dc-b2776d1626b9",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "62f6ee07-69fb-47b7-b104-bd7a1c4ce05a",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Forward",
+                    "action": "Move",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "2fd4128f-3823-4b37-b8cd-920663290159",
+                    "name": "down",
+                    "id": "47e8d44e-663a-4e3f-a802-800acddfbfe1",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Backward",
+                    "action": "Move",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "34c8d597-e03d-4b36-aa40-f8cb129069db",
+                    "name": "left",
+                    "id": "f09894c5-a13e-4768-becf-758986af6a71",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Left",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d6ead0d5-bb1d-4260-9bcf-eb2aec10f8a0",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "311d65d1-fe21-40d3-b529-11084e613f09",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "6eaeb29f-634a-4cbb-ade3-4191debb0487",
-                    "path": "<Keyboard>/d",
+                    "id": "2147cec4-c3b2-4feb-90b6-d54ff72597ed",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Right",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f3c19b3-2cf1-4fd0-8eb9-695781493d4b",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f10eb8fd-1f58-4199-8dd6-9f425fe041b3",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reload",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c0ff536-e38b-467b-b4a4-ac026218a27b",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spray",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc088875-e6a3-4a17-8119-6699a35d4e71",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

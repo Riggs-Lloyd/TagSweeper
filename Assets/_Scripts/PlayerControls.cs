@@ -29,10 +29,7 @@ public class PlayerControls : MonoBehaviour
 	    if(Input.GetKey(KeyCode.D)) {
 		    rigidbody.position += Vector3.right * Time.deltaTime * movementSpeed;
 	    }
-	    if(Input.GetKey(KeyCode.Space))
-	    {
-		    rigidbody.position += Vector3.up * Time.deltaTime * 1;
-	    }
+	    
     }
 
 }

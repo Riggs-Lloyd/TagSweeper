@@ -17,7 +17,7 @@ public class Gambling : MonoBehaviour
         if (distance <= interactionRange && Input.GetKeyDown(KeyCode.X))
         {
             int roll = Random.Range(1, 1000); // Rolls between 1 and 999
-            if (roll == 999)
+            if (roll >= 999)
             {
                 resultText.text = "Win";
             }

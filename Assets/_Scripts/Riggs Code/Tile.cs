@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class Tile : MonoBehaviour
 {
 	public int isBomb;
-	public bool isBombTrue; 
+	public bool isBombTrue;
 
 	// Start is called before the first frame update
 	void Start()
@@ -25,9 +25,20 @@ public class Tile : MonoBehaviour
 		}
 	}
 
+	
+
 	// Update is called once per frame
 	void Update()
 	{
-
+		if (gameObject.CompareTag("Tagged") == true && isBombTrue == true)
+		{
+			
+			transform.Find("BOOM 0:0").gameObject.SetActive(true);
+			
+		}
+		else
+		{
+			return;
+		}
 	}
 }

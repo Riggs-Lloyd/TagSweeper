@@ -89,6 +89,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DamageTesting"",
+                    ""type"": ""Button"",
+                    ""id"": ""1fa93ee2-f2dc-47ac-829a-ec29351e85d9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -212,6 +221,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f918ad2a-2211-47d9-acf1-b3d007736a1b"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DamageTesting"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -227,6 +247,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Locomotion_Reload = m_Locomotion.FindAction("Reload", throwIfNotFound: true);
         m_Locomotion_Spray = m_Locomotion.FindAction("Spray", throwIfNotFound: true);
         m_Locomotion_Run = m_Locomotion.FindAction("Run", throwIfNotFound: true);
+        m_Locomotion_DamageTesting = m_Locomotion.FindAction("DamageTesting", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -295,6 +316,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Locomotion_Reload;
     private readonly InputAction m_Locomotion_Spray;
     private readonly InputAction m_Locomotion_Run;
+    private readonly InputAction m_Locomotion_DamageTesting;
     public struct LocomotionActions
     {
         private @Controls m_Wrapper;
@@ -306,6 +328,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Reload => m_Wrapper.m_Locomotion_Reload;
         public InputAction @Spray => m_Wrapper.m_Locomotion_Spray;
         public InputAction @Run => m_Wrapper.m_Locomotion_Run;
+        public InputAction @DamageTesting => m_Wrapper.m_Locomotion_DamageTesting;
         public InputActionMap Get() { return m_Wrapper.m_Locomotion; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -336,6 +359,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Run.started += instance.OnRun;
             @Run.performed += instance.OnRun;
             @Run.canceled += instance.OnRun;
+            @DamageTesting.started += instance.OnDamageTesting;
+            @DamageTesting.performed += instance.OnDamageTesting;
+            @DamageTesting.canceled += instance.OnDamageTesting;
         }
 
         private void UnregisterCallbacks(ILocomotionActions instance)
@@ -361,6 +387,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Run.started -= instance.OnRun;
             @Run.performed -= instance.OnRun;
             @Run.canceled -= instance.OnRun;
+            @DamageTesting.started -= instance.OnDamageTesting;
+            @DamageTesting.performed -= instance.OnDamageTesting;
+            @DamageTesting.canceled -= instance.OnDamageTesting;
         }
 
         public void RemoveCallbacks(ILocomotionActions instance)
@@ -387,5 +416,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnReload(InputAction.CallbackContext context);
         void OnSpray(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
+        void OnDamageTesting(InputAction.CallbackContext context);
     }
 }

@@ -20,6 +20,8 @@ public class InputManager : MonoBehaviour
     public InputAction ReloadAction { get; private set; }
     public InputAction SprayAction { get; private set; }
     public InputAction RunAction { get; private set; }
+    public InputAction DamageTestingAction { get; private set; }
+
 
     public bool FireDown { get; private set; }
     public bool AimDown { get; private set; }
@@ -51,6 +53,7 @@ public class InputManager : MonoBehaviour
         ReloadAction = _controls.Locomotion.Reload;
         SprayAction = _controls.Locomotion.Spray;
         RunAction = _controls.Locomotion.Run;
+        DamageTestingAction = _controls.Locomotion.DamageTesting;
 
     }
 

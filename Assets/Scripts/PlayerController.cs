@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float staminaDrainRate = 25f;  // per second
     [SerializeField] private float staminaRegenRate = 15f;  // per second
     [SerializeField] private bool canRun = true;
+    private bool isDead = false;
+
 
     private new GunController Guns;
     // Start is called before the first frame update
@@ -35,6 +37,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDead) return;
+
         HandleMovement(Time.deltaTime);
         HandleStamina(Time.deltaTime);
     }
@@ -75,6 +79,11 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    public void DisableMovement()
+    {
+        isDead = true;
+    }
+
 
     private void RunningChecker(InputAction.CallbackContext obj)
     {

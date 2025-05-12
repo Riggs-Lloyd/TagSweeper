@@ -1048,8 +1048,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.6436516, y: 7.8716393, z: 0.38293388}
+  m_Center: {x: -0.052598733, y: 3.4358196, z: -0.0315379}
 --- !u!23 &405277841
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1462,8 +1462,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.38335532, y: 7.989138, z: 0.6953264}
+  m_Center: {x: 0.015526121, y: 3.494569, z: 0.00299476}
 --- !u!23 &674705010
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2076,8 +2076,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.31478113, y: 4.7956424, z: 0.4313206}
+  m_Center: {x: 0.004182975, y: 1.8978217, z: 0.04030635}
 --- !u!23 &979697775
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8893,6 +8893,30 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7874092398705530058, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6873613
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874092398705530058, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
+      propertyPath: m_Size.y
+      value: 5.385398
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874092398705530058, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
+      propertyPath: m_Size.z
+      value: 0.4980607
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874092398705530058, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
+      propertyPath: m_Center.x
+      value: 0.018636514
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874092398705530058, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
+      propertyPath: m_Center.y
+      value: 2.1926985
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874092398705530058, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
+      propertyPath: m_Center.z
+      value: 0.045385323
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874092398705530058, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -8912,9 +8936,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 235570926333947415, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2407693144637506903}
-    - targetCorrespondingSourceObject: {fileID: 235570926333947415, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2407693144637506913}
     - targetCorrespondingSourceObject: {fileID: 235570926333947415, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2407693144637506909}
@@ -8965,34 +8986,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2407693144637506913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2407693144637506902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cca638bc05c9f2d42b897bb9f29cc396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 834251873}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  TriggerObject: {fileID: 373329129}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

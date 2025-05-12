@@ -43,7 +43,7 @@ public class SprayCanRaycast : MonoBehaviour
     {
         if (Physics.Raycast(_ray, out UnityEngine.RaycastHit hit, maxDistance, _layerMask))
         {
-            if (hit.collider.gameObject.CompareTag("Taggable"))
+            if (hit.collider.gameObject.transform.parent.CompareTag("Taggable"))
             {
                 Debug.Log(hit.collider.gameObject.name + " was hit");
 
@@ -62,7 +62,7 @@ public class SprayCanRaycast : MonoBehaviour
 
                     // Instantiate a new random decal at the spray position
                     CreateNewRandomDecal(wallPosition, wallRotation);
-                    hit.collider.gameObject.tag = "Tagged";
+                    hit.collider.gameObject.transform.parent.tag = "Tagged";
                 }
                 
             }

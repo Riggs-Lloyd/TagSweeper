@@ -1035,7 +1035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234513587}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.040622447, y: -0.705939, z: -0.04062245, w: 0.70593894}
+  m_LocalRotation: {x: -0.040622447, y: -0.705939, z: -0.040622454, w: 0.70593894}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4527,7 +4527,7 @@ GameObject:
   - component: {fileID: 1115350564}
   m_Layer: 0
   m_Name: 1:0
-  m_TagString: Untagged
+  m_TagString: Taggable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4581,8 +4581,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.38691592, y: 7.8506413, z: 0.6876178}
+  m_Center: {x: 0.02042176, y: 3.4253201, z: 0.02903328}
 --- !u!23 &1115350566
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10571,7 +10571,7 @@ GameObject:
   - component: {fileID: 1314668870}
   m_Layer: 0
   m_Name: 1:1
-  m_TagString: Untagged
+  m_TagString: Taggable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10625,8 +10625,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.3164046, y: 4.9410987, z: 0.4286616}
+  m_Center: {x: -0.0031383676, y: 1.9705493, z: 0.039083373}
 --- !u!23 &1314668872
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12839,7 +12839,7 @@ GameObject:
   - component: {fileID: 1813862555}
   m_Layer: 0
   m_Name: 0:1
-  m_TagString: Untagged
+  m_TagString: Taggable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12893,8 +12893,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.68796504, y: 8.015065, z: 0.37981823}
+  m_Center: {x: -0.02894866, y: 3.5075326, z: -0.023409814}
 --- !u!23 &1813862557
 MeshRenderer:
   m_ObjectHideFlags: 0

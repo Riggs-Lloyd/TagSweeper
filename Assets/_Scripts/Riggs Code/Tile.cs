@@ -33,7 +33,7 @@ public class Tile : MonoBehaviour
 		if (gameObject.CompareTag("Tagged") == true && isBombTrue == true)
 		{
 			
-			transform.Find("BOOM 0:0").gameObject.SetActive(true);
+			transform.Find("BOOM " +  gameObject.name).gameObject.SetActive(true);
 			
 		}
 		else

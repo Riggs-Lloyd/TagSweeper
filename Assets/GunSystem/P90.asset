@@ -15,9 +15,9 @@ MonoBehaviour:
   gunName: P90
   damage: 50
   fireRate: 850
-  magSize: 50
+  magSize: 5
   spareAmmo: 210
-  adsSpeed: 2.5
+  adsSpeed: 1
   aimPosition: {x: -0.09, y: -0.15, z: 0.7}
   burstSize: -1
   hipBloom: 5
@@ -27,6 +27,6 @@ MonoBehaviour:
   hipRecoilMultiplier: 1
   adsRecoilMultiplier: 0.5
   recoilResetSpeed: 5
-  swayIntensity: 3
+  swayIntensity: 1
   smoothing: 1
   reloadTime: 1

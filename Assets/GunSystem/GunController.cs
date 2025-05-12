@@ -52,7 +52,7 @@ public class GunController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
 
     private UIManager _uiManager;
-   [SerializeField] private AudioClip _gunShot; // *gun fires*
+   [SerializeField] private AudioClip gunShot; // *gun fires*
    [SerializeField] private AudioClip _noAmmo; // *click click no ammo in gun sound effect*
     
 
@@ -197,7 +197,7 @@ public class GunController : MonoBehaviour
         if (canFire && ammoInMag > 0)
         {
             muzzleFlash.Play();
-            audioSource.PlayOneShot(_gunShot);
+            audioSource.PlayOneShot(gunShot);
             
         }
         // Play "no ammo" sound only if ammo is empty
@@ -249,13 +249,11 @@ public class GunController : MonoBehaviour
         if (canFire)
         {
             muzzleFlash.Play();
-            audioSource.PlayOneShot(_gunShot);
+            audioSource.PlayOneShot(gunShot);
             
         }
-        else
-        {
-            audioSource.PlayOneShot(_noAmmo);
-        }
+
+        
     }
 
 
@@ -343,7 +341,7 @@ public class GunController : MonoBehaviour
             _isAiming = true;
             if (_aimRoutine != null) StopCoroutine(_aimRoutine);
             _aimRoutine = StartCoroutine(AimDownSights());
-            mainCam.fieldOfView = 20;
+            mainCam.fieldOfView = adsFOV;
         }
 
         private void OnAimReleased(InputAction.CallbackContext obj)
@@ -352,7 +350,7 @@ public class GunController : MonoBehaviour
             _isAiming = false;
             if (_aimRoutine != null) StopCoroutine(_aimRoutine);
             _aimRoutine = StartCoroutine(ReturnSightPosition());
-            mainCam.fieldOfView = 60;
+            mainCam.fieldOfView = _DefaultFov;
         }
 
         private IEnumerator AimDownSights()
@@ -428,6 +426,7 @@ public class GunController : MonoBehaviour
         {
             float x = _input.Look.x;
             float y = _input.Look.y;
+            
 
             // compute adjustment rotations based on sway intensity
             // and input amount. 

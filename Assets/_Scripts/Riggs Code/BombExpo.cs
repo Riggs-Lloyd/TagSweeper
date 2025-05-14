@@ -9,30 +9,36 @@ using UnityEngine.Events;
 public class BombExpo : MonoBehaviour
 {
     
-    public GameObject[] tiles = new GameObject[8];
+    public GameObject[] tiles = new GameObject[3];
     
-  
-    
+
     private void Start()
     {
-        
+        checkAdjacent();
     }
 
     private void Update()
     {
         
     }
+   
 
     private void checkAdjacent()
     {
         //check each directions (N,NE,E...) and see if that tiles isBombTrue is true or not if yes the add to number val
+        
 
-        for (int i = 0; i < 9; i++)
-        {
-           if (tiles == true)
-            {
-                
-            }   
-        }
+       // foreach (bool bombVal in tiles)
+      //  {
+      //      GetComponent<Tile>().isBombTrue = n;
+       //     if (n == true)
+         //   {
+       //         Debug.Log("Meow");
+        //    }
+      //  }
+
     } 
+    
+    
+    
 }

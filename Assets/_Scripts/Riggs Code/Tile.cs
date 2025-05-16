@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -15,12 +12,11 @@ public class Tile : MonoBehaviour
 
 	// Start is called before the first frame update
 
-	void Start()
+	private void Awake()
 	{
-
 		isBomb = Random.Range(1, 11);
 
-		if (isBomb <= 2)
+		if (isBomb <= 7)
 		{
 			isBombTrue = true;
 		}
@@ -28,20 +24,23 @@ public class Tile : MonoBehaviour
 		{
 			isBombTrue = false;
 		}
+
+	}
+
+	void Start()
+	{
 		
 
 		for (int i = 0; i < tiles.Length; i++)
 		{
-			if (this.gameObject.Tile.isBombTrue == true)
-				
-				//Is checking its own isBombTrue not its neighbors
-				
+			if (tiles[i].GetComponent<Tile>().isBombTrue) 
+			//Is checking its own isBombTrue not its neighbors
 			{
-				counter += 1;S
+				counter += 1;
 			}
 			else
 			{
-				Debug.Log("Woof");
+				counter += 0;
 			}
 		}
 
@@ -49,7 +48,7 @@ public class Tile : MonoBehaviour
 		// Update is called once per frame
 	void Update()
 	{
-		if (gameObject.CompareTag("Tagged") == true && isBombTrue == true)
+		if (gameObject.CompareTag("Tagged") && isBombTrue)
 		{
 			
 			transform.Find("BOOM " +  gameObject.name).gameObject.SetActive(true);
@@ -57,7 +56,6 @@ public class Tile : MonoBehaviour
 		}
 		else
 		{
-			return;
 		}
 
 		void CheckAdjacent()

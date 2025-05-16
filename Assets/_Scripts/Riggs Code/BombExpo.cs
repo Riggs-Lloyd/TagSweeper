@@ -10,6 +10,7 @@ public class BombExpo : MonoBehaviour
 {
     
     public GameObject[] tiles = new GameObject[3];
+    public bool bombVal = true;
     
 
     private void Start()

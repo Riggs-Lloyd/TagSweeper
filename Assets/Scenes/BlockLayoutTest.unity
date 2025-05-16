@@ -776,9 +776,9 @@ MonoBehaviour:
   isBomb: 0
   isBombTrue: 0
   tiles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2407693144637506902}
+  - {fileID: 674705007}
+  - {fileID: 979697772}
   counter: 0
 --- !u!1 &430301043
 GameObject:
@@ -1195,9 +1195,9 @@ MonoBehaviour:
   isBomb: 0
   isBombTrue: 0
   tiles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 979697772}
+  - {fileID: 405277838}
+  - {fileID: 2407693144637506902}
   counter: 0
 --- !u!1 &705507993
 GameObject:
@@ -1726,9 +1726,9 @@ MonoBehaviour:
   isBomb: 0
   isBombTrue: 0
   tiles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 405277838}
+  - {fileID: 2407693144637506902}
+  - {fileID: 674705007}
   counter: 0
 --- !u!1 &1062954452
 GameObject:
@@ -2264,6 +2264,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  bombVal: 1
 --- !u!65 &1846097902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2833,9 +2834,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 235570926333947415, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2407693144637506903}
-    - targetCorrespondingSourceObject: {fileID: 235570926333947415, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2407693144637506910}
   m_SourcePrefab: {fileID: 100100000, guid: d21cd087451c8bb4f832578d5ae8f9d7, type: 3}
 --- !u!4 &2407693144637506901 stripped
 Transform:
@@ -2888,22 +2886,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2407693144637506910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2407693144637506902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cca638bc05c9f2d42b897bb9f29cc396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiles:
-  - {fileID: 674705007}
-  - {fileID: 979697772}
-  - {fileID: 405277838}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

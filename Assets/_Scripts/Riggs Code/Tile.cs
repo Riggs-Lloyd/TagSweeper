@@ -7,7 +7,7 @@ public class Tile : MonoBehaviour
 	public int isBomb;
 	public bool isBombTrue;
 	
-	public GameObject[] tiles = new GameObject[3];
+	public GameObject[] tiles = new GameObject[8];
 	public int counter;
 
 	// Start is called before the first frame update

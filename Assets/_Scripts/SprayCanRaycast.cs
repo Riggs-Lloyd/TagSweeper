@@ -43,7 +43,7 @@ public class SprayCanRaycast : MonoBehaviour
     {
         if (Physics.Raycast(_ray, out UnityEngine.RaycastHit hit, maxDistance, _layerMask))
         {
-            if (hit.collider.gameObject.CompareTag("Taggable"))
+            if (hit.collider.gameObject.transform.parent.CompareTag("Taggable"))
             {
                 Debug.Log(hit.collider.gameObject.name + " was hit");
 
@@ -52,18 +52,42 @@ public class SprayCanRaycast : MonoBehaviour
                 newSprayPosition = hit.point; // Set the spray position to the hit point
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    // Before creating a new decal, ensure we don't exceed maxSprayCount
-                    //if (activeDecals.Count >= maxSprayCount)
-                   //{
-                        // Remove the oldest decal (first in the list) if we've exceeded the limit
-                        //Destroy(activeDecals[0].gameObject); // Destroy the oldest decal
-                        //activeDecals.RemoveAt(0); // Remove it from the list
-                   // }
+                    Transform hitTransform = hit.collider.transform;
+                    Collider col = hit.collider;
 
-                    // Instantiate a new random decal at the spray position
-                    CreateNewRandomDecal(wallPosition, wallRotation);
-                    hit.collider.gameObject.tag = "Tagged";
+                    Vector3 center = col.bounds.center;
+                    Vector3 extent = col.bounds.extents;
+                    float pushOut = 0.01f; // Slight offset to place just outside the surface
+
+                    // Define the four directions and matching extents
+                    Vector3[] directions = new Vector3[]
+                    {
+                        hitTransform.forward,
+                        -hitTransform.forward,
+                        hitTransform.right,
+                        -hitTransform.right
+                    };
+
+                    Vector3[] offsets = new Vector3[]
+                    {
+                        new Vector3(0, 0, extent.z + pushOut),
+                        new Vector3(0, 0, -extent.z - pushOut),
+                        new Vector3(extent.x + pushOut, 0, 0),
+                        new Vector3(-extent.x - pushOut, 0, 0)
+                    };
+
+                    for (int i = 0; i < directions.Length; i++)
+                    {
+                        Vector3 decalPos = center + hitTransform.rotation * offsets[i];
+                        Quaternion decalRot = Quaternion.LookRotation(-directions[i]);
+
+                        CreateNewRandomDecal(decalPos, decalRot);
+                    }
+
+                    hitTransform.parent.tag = "Tagged";
                 }
+
+
                 
             }
         }

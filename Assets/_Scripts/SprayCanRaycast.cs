@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
+
 public class SprayCanRaycast : MonoBehaviour
 {
     private Ray _ray;
@@ -24,6 +25,8 @@ public class SprayCanRaycast : MonoBehaviour
 
     // Maximum number of decals that can be sprayed at a time
     public int maxSprayCount = 5;
+
+    private Tile tile;
 
     void Start()
     {
@@ -52,10 +55,10 @@ public class SprayCanRaycast : MonoBehaviour
                 newSprayPosition = hit.point; // Set the spray position to the hit point
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-<<<<<<< HEAD
                     Transform hitTransform = hit.collider.transform;
+                    Tile t = hit.collider.GetComponentInParent<Tile>();
                     Collider col = hit.collider;
-
+                    
                     Vector3 center = col.bounds.center;
                     Vector3 extent = col.bounds.extents;
                     float pushOut = 0.01f; // Slight offset to place just outside the surface
@@ -82,11 +85,10 @@ public class SprayCanRaycast : MonoBehaviour
                         Vector3 decalPos = center + hitTransform.rotation * offsets[i];
                         Quaternion decalRot = Quaternion.LookRotation(-directions[i]);
 
-                        CreateNewRandomDecal(decalPos, decalRot);
+                        CreateNewRandomDecal(decalPos, decalRot, t);
                     }
 
                     hitTransform.parent.tag = "Tagged";
-=======
                     // Before creating a new decal, ensure we don't exceed maxSprayCount
                     //if (activeDecals.Count >= maxSprayCount)
                    //{
@@ -96,9 +98,7 @@ public class SprayCanRaycast : MonoBehaviour
                    // }
 
                     // Instantiate a new random decal at the spray position
-                    CreateNewRandomDecal(wallPosition, wallRotation);
                     hit.collider.gameObject.transform.parent.tag = "Tagged";
->>>>>>> Riggs
                 }
 
 
@@ -113,18 +113,72 @@ public class SprayCanRaycast : MonoBehaviour
     }
 
     // Create a new random decal at the specified position
-    void CreateNewRandomDecal(Vector3 position, Quaternion rotation)
+    void CreateNewRandomDecal(Vector3 position, Quaternion rotation, Tile t)
     { 
         //Get hit.collider.GameObject. check (Int Value) If int value = to certain number select spray of detection range, random cosmetic spray if bomb not within 4. If Int value = to bomb value explode.
         // Check if there are decal prefabs available
         if (_decalProjectors.Length > 0)
         {
-            // Randomly select a decal prefab from the array
-            int randomIndex = Random.Range(0, _decalProjectors.Length);
 
-            // Instantiate the selected decal prefab and set its position
-            DecalProjector newDecal = Instantiate(_decalProjectors[randomIndex], position, rotation);
-            activeDecals.Add(newDecal); // Add the new decal to the list of active decals
+            if(t != null)
+            { Debug.Log("t is not null");
+                    DecalProjector newDecal;
+                    switch (t.counter)
+                    {
+                        case 0:
+                            newDecal = Instantiate(_decalProjectors[0], position, rotation);
+                            activeDecals.Add(newDecal);
+                            Debug.Log("Trying to draw " + t.counter + " decal");
+                            break;
+                        case 1:
+                            newDecal = Instantiate(_decalProjectors[1], position, rotation);
+                            activeDecals.Add(newDecal);
+                            Debug.Log("Trying to draw " + t.counter + " decal");
+
+                            break;
+                        case 2:
+                            newDecal = Instantiate(_decalProjectors[2], position, rotation);
+                            activeDecals.Add(newDecal);
+                            Debug.Log("Trying to draw " + t.counter + " decal");
+                            break;
+                        case 3:
+                            newDecal = Instantiate(_decalProjectors[3], position, rotation);
+                            activeDecals.Add(newDecal);
+                            Debug.Log("Trying to draw " + t.counter + " decal");
+
+                            break;
+                        case 4:
+                            newDecal = Instantiate(_decalProjectors[4], position, rotation);
+                            activeDecals.Add(newDecal);
+                            break;
+                        case 5:
+                            newDecal = Instantiate(_decalProjectors[5], position, rotation);
+                            activeDecals.Add(newDecal);
+
+                            break;
+                        case 6:
+                            newDecal = Instantiate(_decalProjectors[6], position, rotation);
+                            activeDecals.Add(newDecal);
+                            break;
+                        case 7:
+                            newDecal = Instantiate(_decalProjectors[7], position, rotation);
+                            activeDecals.Add(newDecal);
+
+                            break;
+                        case 8:
+                            newDecal = Instantiate(_decalProjectors[8], position, rotation);
+                            activeDecals.Add(newDecal);
+                            break;
+                    }
+            } else
+            {
+                Debug.Log("T was null");
+            }
+            
+            //Access every tile and check if bomb is true for any of these tiles
+            //Locate nearest tile that bomb is true and find its distance
+            //Take this distance and access decal equal to this distance
+            //Create new decal on object
         }
         else
         {

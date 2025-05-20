@@ -6,12 +6,8 @@ public class Tile : MonoBehaviour
 {
 	public int isBomb;
 	public bool isBombTrue;
-<<<<<<< HEAD
-=======
-	
 	public GameObject[] tiles = new GameObject[8];
 	public int counter;
->>>>>>> Riggs
 
 	// Start is called before the first frame update
 
@@ -54,7 +50,6 @@ public class Tile : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-<<<<<<< HEAD
 		if (gameObject.CompareTag("Tagged") == true && isBombTrue == true)
 		{
 			
@@ -66,15 +61,4 @@ public class Tile : MonoBehaviour
 			return;
 		}
 	}
-=======
-		if (gameObject.CompareTag("Tagged") && isBombTrue)
-		{
-			
-			transform.Find("BOOM " +  gameObject.name).gameObject.SetActive(true);
-			
-		}
-
-	} 
-	
->>>>>>> Riggs
-}
+	}

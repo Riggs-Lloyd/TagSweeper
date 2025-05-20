@@ -154,7 +154,7 @@ public class BallMovement : MonoBehaviour
                 isGrounded = true;
                 jumpUsed = false; // Reset jump usage
                 jumpPressed = false; // Reset jumpPressed when grounded
-                Debug.Log("Grounded, jumpUsed reset.");
+                //Debug.Log("Grounded, jumpUsed reset.");
                 return;
             }
         }

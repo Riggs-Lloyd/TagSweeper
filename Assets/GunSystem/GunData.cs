@@ -14,7 +14,7 @@ public class GunData : ScriptableObject
     // fire rate
     public float fireRate = 850f;
     // mag size
-    public int magSize = 30;
+    public int magSize = 5;
     // default spare ammo
     public int spareAmmo = 210;
     // ads speed

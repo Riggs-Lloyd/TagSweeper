@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: P90
   m_EditorClassIdentifier: 
   gunName: P90
-  damage: 50
+  damage: 10
   fireRate: 850
   magSize: 5
   spareAmmo: 210
   adsSpeed: 1
-  aimPosition: {x: -0.09, y: -0.15, z: 0.7}
+  aimPosition: {x: -0.4, y: -0.15, z: 0.7}
   burstSize: -1
   hipBloom: 5
   yRecoil: 0.5

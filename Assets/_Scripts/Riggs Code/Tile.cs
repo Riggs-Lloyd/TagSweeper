@@ -16,7 +16,7 @@ public class Tile : MonoBehaviour
 	{
 		isBomb = Random.Range(1, 11);
 
-		if (isBomb <= 7)
+		if (isBomb <= 2)
 		{
 			isBombTrue = true;
 		}
@@ -29,12 +29,12 @@ public class Tile : MonoBehaviour
 
 	void Start()
 	{
-		
+
 
 		for (int i = 0; i < tiles.Length; i++)
 		{
-			if (tiles[i].GetComponent<Tile>().isBombTrue) 
-			//Is checking its own isBombTrue not its neighbors
+			if (tiles[i].GetComponent<Tile>().isBombTrue)
+				//Is checking its own isBombTrue not its neighbors
 			{
 				counter += 1;
 			}
@@ -44,8 +44,9 @@ public class Tile : MonoBehaviour
 			}
 		}
 
+	}
 
-		// Update is called once per frame
+	// Update is called once per frame
 	void Update()
 	{
 		if (gameObject.CompareTag("Tagged") && isBombTrue)
@@ -54,20 +55,7 @@ public class Tile : MonoBehaviour
 			transform.Find("BOOM " +  gameObject.name).gameObject.SetActive(true);
 			
 		}
-		else
-		{
-		}
 
-		void CheckAdjacent()
-		{
-			//check each directions (N,NE,E...) and see if that tiles isBombTrue is true or not if yes the add to number val
-        
-			
-			}
-
-		} 
-		
-	}
-
+	} 
 	
 }

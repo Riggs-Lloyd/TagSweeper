@@ -52,6 +52,7 @@ public class SprayCanRaycast : MonoBehaviour
                 newSprayPosition = hit.point; // Set the spray position to the hit point
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+<<<<<<< HEAD
                     Transform hitTransform = hit.collider.transform;
                     Collider col = hit.collider;
 
@@ -85,6 +86,19 @@ public class SprayCanRaycast : MonoBehaviour
                     }
 
                     hitTransform.parent.tag = "Tagged";
+=======
+                    // Before creating a new decal, ensure we don't exceed maxSprayCount
+                    //if (activeDecals.Count >= maxSprayCount)
+                   //{
+                        // Remove the oldest decal (first in the list) if we've exceeded the limit
+                        //Destroy(activeDecals[0].gameObject); // Destroy the oldest decal
+                        //activeDecals.RemoveAt(0); // Remove it from the list
+                   // }
+
+                    // Instantiate a new random decal at the spray position
+                    CreateNewRandomDecal(wallPosition, wallRotation);
+                    hit.collider.gameObject.transform.parent.tag = "Tagged";
+>>>>>>> Riggs
                 }
 
 

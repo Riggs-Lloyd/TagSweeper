@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,11 +6,17 @@ public class Tile : MonoBehaviour
 {
 	public int isBomb;
 	public bool isBombTrue;
+<<<<<<< HEAD
+=======
+	
+	public GameObject[] tiles = new GameObject[8];
+	public int counter;
+>>>>>>> Riggs
 
 	// Start is called before the first frame update
-	void Start()
-	{
 
+	private void Awake()
+	{
 		isBomb = Random.Range(1, 11);
 
 		if (isBomb <= 2)
@@ -23,6 +27,26 @@ public class Tile : MonoBehaviour
 		{
 			isBombTrue = false;
 		}
+
+	}
+
+	void Start()
+	{
+
+
+		for (int i = 0; i < tiles.Length; i++)
+		{
+			if (tiles[i].GetComponent<Tile>().isBombTrue)
+				//Is checking its own isBombTrue not its neighbors
+			{
+				counter += 1;
+			}
+			else
+			{
+				counter += 0;
+			}
+		}
+
 	}
 
 	
@@ -30,6 +54,7 @@ public class Tile : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+<<<<<<< HEAD
 		if (gameObject.CompareTag("Tagged") == true && isBombTrue == true)
 		{
 			
@@ -41,4 +66,15 @@ public class Tile : MonoBehaviour
 			return;
 		}
 	}
+=======
+		if (gameObject.CompareTag("Tagged") && isBombTrue)
+		{
+			
+			transform.Find("BOOM " +  gameObject.name).gameObject.SetActive(true);
+			
+		}
+
+	} 
+	
+>>>>>>> Riggs
 }
